@@ -48,7 +48,7 @@ body{
   content:"";
   position:absolute;
   inset:0;
-  background: rgba(43,43,43,.55); /* filtr dla czytelności tekstu */
+  background: rgba(43,43,43,.85); /* filtr dla czytelności tekstu */
   z-index:1;
 }
 .hero-overlay{
