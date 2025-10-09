@@ -135,7 +135,7 @@ footer{
 a.link{ color:#EDEDED; text-underline-offset:2px }
 .divider{
   height:1px;
-  background:linear-gradient(90deg, transparent, rgba(255,255,255,.14), transparent);
+  background:linear-gradient(90deg, transparent, rgba(255,255,255,.22), transparent);
   margin:20px 0;
 }
 
