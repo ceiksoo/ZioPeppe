@@ -11,17 +11,32 @@
   <meta property="og:title" content="Zio Peppe — wkrótce">
   <meta property="og:description" content="Rodzi się nowa włoska pizzeria. Zostań z nami — obserwuj na Facebooku i Instagramie.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://twoja-domena.github.io/"> <!-- uzupełnij -->
+  <meta property="og:image" content="media/og-cover.jpg">            <!-- uzupełnij -->
+  <link rel="canonical" href="https://twoja-domena.github.io/">      <!-- uzupełnij -->
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Preload wideo (szybszy start) -->
+  <link rel="preload" as="video" href="media/tlo.mp4" type="video/mp4">
 </head>
 <body>
   <!-- Sekcja hero z wideo -->
-  <section class="hero">
-    <video autoplay muted loop playsinline class="hero-video">
+  <section class="hero" aria-label="Zio Peppe — zapowiedź">
+    <video
+      class="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      poster="media/cover.jpg"              <!-- opcjonalny kadr startowy -->
+      aria-hidden="true"
+      tabindex="-1">
       <source src="media/tlo.mp4" type="video/mp4">
-      Twój browser nie obsługuje video.
     </video>
+
     <div class="hero-overlay">
       <header>
         <div class="brand">Zio&nbsp;Peppe</div>
@@ -39,11 +54,16 @@
       </p>
 
       <div class="cta">
-        <a class="btn fb" href="https://www.facebook.com/profile.php?id=61581576917191" target="_blank" rel="noopener">Obserwuj na Facebooku</a>
-        <a class="btn ig" href="https://www.instagram.com/ziopeppe.pizza/" target="_blank" rel="noopener">Śledź nas na Instagramie</a>
+        <a class="btn fb" href="https://www.facebook.com/profile.php?id=61581576917191" target="_blank" rel="noopener noreferrer">Obserwuj na Facebooku</a>
+        <a class="btn ig" href="https://www.instagram.com/ziopeppe.pizza/" target="_blank" rel="noopener noreferrer">Śledź nas na Instagramie</a>
         <small class="subtle">Tip: dodaj do ulubionych — wrócimy tu z nowościami.</small>
       </div>
     </div>
+
+    <!-- Fallback dla wyłączonego JS/auto-play -->
+    <noscript>
+      <img src="media/cover.jpg" alt="Zio Peppe — zapowiedź" style="width:100%;height:auto;display:block;">
+    </noscript>
   </section>
 
   <div class="divider" aria-hidden="true"></div>
