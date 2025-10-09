@@ -48,7 +48,7 @@ body{
   content:"";
   position:absolute;
   inset:0;
-  background: rgba(43,43,43,.35); /* łagodny filtr na całe wideo */
+  background: rgba(43,43,43,.05); /* łagodny filtr na całe wideo */
   z-index:1;
 }
 .hero-overlay{
