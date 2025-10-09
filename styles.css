@@ -147,7 +147,7 @@ a.link{ color:#EDEDED; text-underline-offset:2px }
 
 /* Przyciemnione tło pod tekstem hero (lokalne, mocniejsze) */
 .hero-overlay {
-  background: rgba(0,0,0,0.72);
+  background: rgba(0,0,0,0.82);
   border-radius: 12px;
   padding: 24px;
   backdrop-filter: blur(4px);
