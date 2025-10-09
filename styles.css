@@ -48,7 +48,7 @@ body{
   content:"";
   position:absolute;
   inset:0;
-  background: rgba(43,43,43,.85); /* filtr dla czytelności tekstu */
+  background: rgba(43,43,43,.35); /* łagodny filtr na całe wideo */
   z-index:1;
 }
 .hero-overlay{
@@ -119,7 +119,7 @@ h1{
           mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0C141.09 0 89.53 54.42 89.53 153.12v42.22H0v92.66h89.53V512h107.1V288z"/></svg>') center/contain no-repeat;
 }
 .btn.ig::before{
-  -webkit-mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.2 0-74.7-33.4-74.7-74.7s33.4-74.7 74.7-74.7 74.7 33.4 74.7 74.7-33.4 74.7-74.7 74.7zm146.4-194.3c0 14.9-12.1 27-27 27-14.9 0-27-12.1-27-27s12.1-27 27-27 27 12.1 27 27zM398.8 388c-7.8 20.7-24.2 37.1-44.9 44.9-31.1 12.3-104.9 9.5-129.8 9.5s-98.7 2.7-129.8-9.5c-20.7-7.8-37.1-24.2-44.9-44.9-12.3-31.1-9.5-104.9-9.5-129.8s-2.7-98.7 9.5-129.8c7.8-20.7 24.2-37.1 44.9-44.9 31.1-12.3 104.9-9.5 129.8-9.5s98.7-2.7 129.8 9.5c20.7 7.8 37.1 24.2 44.9 44.9 12.3 31.1 9.5 104.9 9.5 129.8z"/></svg>') center/contain no-repeat;
+  -webkit-mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.2 0-74.7-33.4-74.7-74.7s33.4-74.7 74.7-74.7 74.7 33.4 74.7 74.7-33.4 74.7-74.7 74.7zm146.4-194.3c0 14.9-12.1 27-27 27-14.9 0-27-12.1-27-27s12.1-27 27-27 27 12.1 27 27zM398.8 388c-7.8 20.7-24.2 37.1-44.9 44.9-31.1-12.3-104.9 9.5-129.8 9.5s-98.7 2.7-129.8-9.5c-20.7-7.8-37.1-24.2-44.9-44.9-12.3-31.1-9.5-104.9-9.5-129.8s-2.7-98.7 9.5-129.8c7.8-20.7 24.2-37.1 44.9-44.9 31.1-12.3 104.9-9.5 129.8-9.5s98.7-2.7 129.8 9.5c20.7 7.8 37.1 24.2 44.9 44.9 12.3 31.1 9.5 104.9 9.5 129.8z"/></svg>') center/contain no-repeat;
           mask:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.2 0-74.7-33.4-74.7-74.7s33.4-74.7 74.7-74.7 74.7 33.4 74.7 74.7-33.4 74.7-74.7 74.7zm146.4-194.3c0 14.9-12.1 27-27 27-14.9 0-27-12.1-27-27s12.1-27 27-27 27 12.1 27 27zM398.8 388c-7.8 20.7-24.2 37.1-44.9 44.9-31.1-12.3-104.9 9.5-129.8 9.5s-98.7 2.7-129.8-9.5c-20.7-7.8-37.1-24.2-44.9-44.9-12.3-31.1-9.5-104.9-9.5-129.8s-2.7-98.7 9.5-129.8c7.8-20.7 24.2-37.1 44.9-44.9 31.1-12.3 104.9-9.5 129.8-9.5s98.7-2.7 129.8 9.5c20.7 7.8 37.1 24.2 44.9 44.9 12.3 31.1 9.5 104.9 9.5 129.8z"/></svg>') center/contain no-repeat;
 }
 
@@ -145,12 +145,13 @@ a.link{ color:#EDEDED; text-underline-offset:2px }
   .btn:hover{filter:none}
 }
 
-/* Przyciemnione tło pod tekstem hero */
+/* Przyciemnione tło pod tekstem hero (lokalne, mocniejsze) */
 .hero-overlay {
-  background: rgba(0, 0, 0, 0.45); /* półprzezroczyste ciemne tło */
-  border-radius: 12px;             /* opcjonalne zaokrąglenia */
+  background: rgba(0,0,0,0.62);
+  border-radius: 12px;
   padding: 24px;
-  backdrop-filter: blur(3px);      /* lekki blur – opcjonalnie, fajny efekt */
-  max-width: var(--maxw);          /* zachowuje spójność z resztą layoutu */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  max-width: var(--maxw);
   margin: 0 auto;
 }
