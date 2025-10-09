@@ -11,42 +11,47 @@
   <meta property="og:title" content="Zio Peppe — wkrótce">
   <meta property="og:description" content="Rodzi się nowa włoska pizzeria. Zostań z nami — obserwuj na Facebooku i Instagramie.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="">
-  <meta property="og:url" content="">
 
-  <!-- odwołanie do zewnętrznego CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="wrap" role="main">
-    <header>
-      <div class="brand">Zio&nbsp;Peppe</div>
-      <div class="tag">pizza italiana 🍕</div>
-    </header>
+  <!-- Sekcja hero z wideo -->
+  <section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="media/tlo.mp4" type="video/mp4">
+      Twój browser nie obsługuje video.
+    </video>
+    <div class="hero-overlay">
+      <header>
+        <div class="brand">Zio&nbsp;Peppe</div>
+        <div class="tag">pizza italiana 🍕</div>
+      </header>
 
-    <h1 class="accent">
-      <span class="green">Wszystko</span>, co dobre,
-      <span class="red">potrzebuje czasu…</span>
-    </h1>
+      <h1 class="accent">
+        <span class="green">Wszystko</span>, co dobre,
+        <span class="red">potrzebuje czasu…</span>
+      </h1>
 
-    <p class="lead">
-      Ciao! Tu rodzi się <strong>Zio Peppe</strong> — nowa pizzeria tworzona z sercem i włoskim temperamentem.
-      Jeszcze nie zdradzamy wszystkiego, ale możesz być z nami od początku.
-    </p>
+      <p class="lead">
+        Ciao! Tu rodzi się <strong>Zio Peppe</strong> — nowa pizzeria tworzona z sercem i włoskim temperamentem.
+        Jeszcze nie zdradzamy wszystkiego, ale możesz być z nami od początku.
+      </p>
 
-    <div class="cta">
-      <a class="btn fb" href="https://www.facebook.com/profile.php?id=61581576917191" target="_blank" rel="noopener">Obserwuj na Facebooku</a>
-      <a class="btn ig" href="https://www.instagram.com/ziopeppe.pizza/" target="_blank" rel="noopener">Śledź nas na Instagramie</a>
-      <small class="subtle">Tip: dodaj do ulubionych — wrócimy tu z nowościami.</small>
+      <div class="cta">
+        <a class="btn fb" href="https://www.facebook.com/profile.php?id=61581576917191" target="_blank" rel="noopener">Obserwuj na Facebooku</a>
+        <a class="btn ig" href="https://www.instagram.com/ziopeppe.pizza/" target="_blank" rel="noopener">Śledź nas na Instagramie</a>
+        <small class="subtle">Tip: dodaj do ulubionych — wrócimy tu z nowościami.</small>
+      </div>
     </div>
+  </section>
 
-    <div class="divider" aria-hidden="true"></div>
+  <div class="divider" aria-hidden="true"></div>
 
-    <footer>
-      <span>© <script>document.write(new Date().getFullYear())</script> Zio Peppe</span>
-      <span>•</span>
-      <a class="link" href="mailto:ziopeppe.pizza@gmail.com">kontakt</a>
-    </footer>
-  </main>
+  <footer>
+    <span>© <script>document.write(new Date().getFullYear())</script> Zio Peppe</span>
+    <span>•</span>
+    <a class="link" href="mailto:ziopeppe.pizza@gmail.com">kontakt</a>
+  </footer>
 </body>
 </html>
