@@ -11,15 +11,15 @@
   <meta property="og:title" content="Zio Peppe — wkrótce">
   <meta property="og:description" content="Rodzi się nowa włoska pizzeria. Zostań z nami — obserwuj na Facebooku i Instagramie.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://twoja-domena.github.io/"> <!-- uzupełnij -->
-  <meta property="og:image" content="media/og-cover.jpg">            <!-- uzupełnij -->
-  <link rel="canonical" href="https://twoja-domena.github.io/">      <!-- uzupełnij -->
+  <meta property="og:url" content="https://twoja-domena.github.io/">
+  <meta property="og:image" content="media/og-cover.jpg">
+  <link rel="canonical" href="https://twoja-domena.github.io/">
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Preload wideo (szybszy start) -->
-  <link rel="preload" as="video" href="media/tlo.MP4" type="video/MP4">
+  <!-- Preload wideo -->
+  <link rel="preload" as="video" href="media/tlo.mp4" type="video/mp4">
 </head>
 <body>
   <!-- Sekcja hero z wideo -->
@@ -31,10 +31,10 @@
       loop
       playsinline
       preload="metadata"
-      poster="media/cover.jpg"              <!-- opcjonalny kadr startowy -->
+      poster="media/cover.jpg"
       aria-hidden="true"
       tabindex="-1">
-      <source src="media/tlo.MP4" type="video/mp4">
+      <source src="media/tlo.mp4" type="video/mp4">
     </video>
 
     <div class="hero-overlay">
@@ -60,7 +60,6 @@
       </div>
     </div>
 
-    <!-- Fallback dla wyłączonego JS/auto-play -->
     <noscript>
       <img src="media/cover.jpg" alt="Zio Peppe — zapowiedź" style="width:100%;height:auto;display:block;">
     </noscript>
