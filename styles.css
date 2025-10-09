@@ -144,3 +144,10 @@ a.link{ color:#EDEDED; text-underline-offset:2px }
   .btn{transition:none}
   .btn:hover{filter:none}
 }
+
+/* Przyciemnione tło pod tekstem hero */
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.45); /* półprzezroczyste ciemne tło */
+  border-radius: 12px;             /* opcjonalne zaokrąglenia */
+  padding: 24px;
+}
