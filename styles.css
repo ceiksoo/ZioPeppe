@@ -150,4 +150,7 @@ a.link{ color:#EDEDED; text-underline-offset:2px }
   background: rgba(0, 0, 0, 0.45); /* półprzezroczyste ciemne tło */
   border-radius: 12px;             /* opcjonalne zaokrąglenia */
   padding: 24px;
+  backdrop-filter: blur(3px);      /* lekki blur – opcjonalnie, fajny efekt */
+  max-width: var(--maxw);          /* zachowuje spójność z resztą layoutu */
+  margin: 0 auto;
 }
